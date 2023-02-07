@@ -14,34 +14,79 @@
 <!-- Es documento esta siendo complementado con la libreria https://bootstrap-expanded-features.vercel.app/ que ayuda a mejorar boobstrap -->
 
 <body class="bef bef-bg-Linengress">
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="mb-auto bef bef-bg-greengrass">
-      <div>
-        <h3 class="float-md-start mb-0">Cover</h3>
-        <nav class="nav nav-masthead justify-content-center float-md-end">
-          <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
-          <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
-          <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-        </nav>
-      </div>
+    <header class="mb-auto">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-
-    <main class="px-3">
-      <h1>Cover your page.</h1>
-      <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the
-        text, and add your own fullscreen background photo to make it your own.</p>
-      <p class="lead">
-        <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn more</a>
-      </p>
-    </main>
-
-    <footer class="mt-auto text-white-50">
-      <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a
-          href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-    </footer>
-  </div>
-
   <main>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p>Some representative placeholder content for the first slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <div class="d-flex bef bef-gap-5px bef-p-5px">
       <div class=" bef bef-w-33per bef-bg-pastelbluegress p-5">
@@ -54,29 +99,29 @@
           PageMaker including versions of Lorem Ipsum.</p>
       </div>
       <div class=" bef bef-w-67per bef-bg-bluegress">
-        <h2>Imagen</h2>
+        <h2 class="p-5">Imagen</h2>
       </div>
     </div>
 
     <div class="d-flex flex-wrap bef bef-gap-5px bef-px-5px">
       <div
         class="order-1 order-md-0 d-flex flex-wrap bef bef-w-100per bef-w-md-calcSD50per__MIN__2_5pxED bef-gap-5px bef-py-5px justify-content-evenly align-items-center">
-        <div class="bef bef-w-100per bef-w-md-clampSD200pxCOM__calcSD50per__MIN__2_5pxEDCOM__320pxED bef-bg-bluegress">
+        <div class="p-5 bef bef-w-100per bef-w-md-clampSD200pxCOM__calcSD50per__MIN__2_5pxEDCOM__320pxED bef-bg-bluegress">
           <h2>Imagen</h2>
         </div>
-        <div class="bef bef-w-100per bef-w-md-clampSD200pxCOM__calcSD50per__MIN__2_5pxEDCOM__320pxED bef-bg-bluegress">
+        <div class="p-5 bef bef-w-100per bef-w-md-clampSD200pxCOM__calcSD50per__MIN__2_5pxEDCOM__320pxED bef-bg-bluegress">
           <h2>Imagen</h2>
         </div>
-        <div class="bef bef-w-100per bef-w-md-clampSD200pxCOM__calcSD50per__MIN__2_5pxEDCOM__320pxED bef-bg-bluegress">
+        <div class="p-5 bef bef-w-100per bef-w-md-clampSD200pxCOM__calcSD50per__MIN__2_5pxEDCOM__320pxED bef-bg-bluegress">
           <h2>Imagen</h2>
         </div>
-        <div class="bef bef-w-100per bef-w-md-clampSD200pxCOM__calcSD50per__MIN__2_5pxEDCOM__320pxED bef-bg-bluegress">
+        <div class="p-5 bef bef-w-100per bef-w-md-clampSD200pxCOM__calcSD50per__MIN__2_5pxEDCOM__320pxED bef-bg-bluegress">
           <h2>Imagen</h2>
         </div>
-        <div class="bef bef-w-100per bef-w-md-clampSD200pxCOM__calcSD50per__MIN__2_5pxEDCOM__320pxED bef-bg-bluegress">
+        <div class="p-5 bef bef-w-100per bef-w-md-clampSD200pxCOM__calcSD50per__MIN__2_5pxEDCOM__320pxED bef-bg-bluegress">
           <h2>Imagen</h2>
         </div>
-        <div class="bef bef-w-100per bef-w-md-clampSD200pxCOM__calcSD50per__MIN__2_5pxEDCOM__320pxED bef-bg-bluegress">
+        <div class="p-5 bef bef-w-100per bef-w-md-clampSD200pxCOM__calcSD50per__MIN__2_5pxEDCOM__320pxED bef-bg-bluegress">
           <h2>Imagen</h2>
         </div>
       </div>
@@ -91,7 +136,7 @@
             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
             Aldus PageMaker including versions of Lorem Ipsum.</P>
         </div>
-        <div class="bef bef-w-clampSD200pxCOM__100perCOM__640pxED bef-bg-bluegress align-content-end">
+        <div class="bef bef-w-clampSD200pxCOM__100perCOM__640pxED bef-bg-bluegress align-content-end p-5">
           <h2>Imagen</h2>
         </div>
       </div>
@@ -140,7 +185,7 @@
             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
             Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
-        <div class=" col-sm-6 bef bef-bg-PowderBluegress">
+        <div class=" col-sm-6 bef bef-bg-PowderBluegress p-5">
           <h2>Imagen</h2>
         </div>
       </div>
@@ -171,34 +216,6 @@
     <div class="d-flex align-items-center justify-content-center p-3">
       <h4 class="text-center">Copyright © 2023 All Rights Reserved</h4>
     </div>
-    <!--     <div>
-      <div class="row d-flex p-3">
-        <div>
-          <div class="col-md-2 col-sm-6 d-flex justify-content-center">
-            <img src="https://picsum.photos/66" class="" alt="..." />
-          </div>
-          <div class="col-md-2 col-sm-6 d-flex justify-content-center">
-            <img src="https://picsum.photos/66" class="" alt="..." />
-          </div>
-        </div>
-        <div>
-          <div class="col-md-2 col-sm-6 d-flex justify-content-center">
-            <img src="https://picsum.photos/66" class="" alt="..." />
-          </div>
-          <div class="col-md-2 col-sm-6 d-flex justify-content-center">
-            <img src="https://picsum.photos/66" class="" alt="..." />
-          </div>
-        </div>
-        <div>
-          <div class="col-md-2 col-sm-6 d-flex justify-content-center">
-            <img src="https://picsum.photos/66" class="" alt="..." />
-          </div>
-          <div class="col-md-2 col-sm-6 d-flex justify-content-center">
-            <img src="https://picsum.photos/66" class="" alt="..." />
-          </div>
-        </div>
-      </div>
-    </div> -->
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
