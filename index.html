@@ -8,38 +8,45 @@
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-  <link rel="stylesheet" href="bef-styles.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/css/bef-styles.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/superslides.css" />
 </head>
 <!-- Es documento esta siendo complementado con la libreria https://bootstrap-expanded-features.vercel.app/ que ayuda a mejorar boobstrap -->
 
 <body class="bef bef-bg-Linengress">
+  <!-- Esto es el menu -->
     <header class="mb-auto">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bef bef-bg-greengrass">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#">Carousel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Link</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
+                <a class="nav-link disabled">Disabled</a>
               </li>
             </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
           </div>
         </div>
       </nav>
+<!-- Esto es el menu -->
     </header>
+
   <main>
+    <!-- Carousel section -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -48,9 +55,11 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+          <img src="/img/WhatsApp Image 2023-01-11 at 11.55.00 PM (4).jpeg" class="d-block w-75" alt="">
           <div class="container">
             <div class="carousel-caption text-start">
+              
               <h1>Example headline.</h1>
               <p>Some representative placeholder content for the first slide of the carousel.</p>
               <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
@@ -58,7 +67,8 @@
           </div>
         </div>
         <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+          <img src="/img/IMG_20220815_000240_696.jpg" class="d-block w-50" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
@@ -68,7 +78,8 @@
           </div>
         </div>
         <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+         <!--  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+         <img src="/img/WhatsApp Image 2023-01-11 at 11.55.00 PM (1).jpeg" class="d-block w-75" alt="">
           <div class="container">
             <div class="carousel-caption text-end">
               <h1>One more for good measure.</h1>
@@ -87,9 +98,11 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+<!-- Carousel section -->
 
-    <div class="d-flex bef bef-gap-5px bef-p-5px">
-      <div class=" bef bef-w-33per bef-bg-pastelbluegress p-5">
+<!-- Primer texto -->
+    <div class="d-flex row ">
+      <div class="col-md-4 bef-bg-pastelbluegress p-5">
         <h2>Info</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -98,11 +111,11 @@
           Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
           PageMaker including versions of Lorem Ipsum.</p>
       </div>
-      <div class=" bef bef-w-67per bef-bg-bluegress">
+      <div class="col-md-8 bef-bg-bluegress">
         <h2 class="p-5">Imagen</h2>
       </div>
     </div>
-
+<!-- Primer texto -->
     <div class="d-flex flex-wrap bef bef-gap-5px bef-px-5px">
       <div
         class="order-1 order-md-0 d-flex flex-wrap bef bef-w-100per bef-w-md-calcSD50per__MIN__2_5pxED bef-gap-5px bef-py-5px justify-content-evenly align-items-center">
@@ -217,6 +230,8 @@
       <h4 class="text-center">Copyright © 2023 All Rights Reserved</h4>
     </div>
   </footer>
+<!--   <script src="/js/jquery.js"></script>
+  <script src="/js/jquery.superslides.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
