@@ -52,3 +52,8 @@
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 } */
+
+.object-fit-cover {
+  object-fit: cover;
+  object-position: center bottom;
+}
