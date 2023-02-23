@@ -109,3 +109,7 @@
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
+
+.card-img-top {
+  aspect-ratio: auto;
+}
