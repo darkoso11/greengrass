@@ -36,7 +36,7 @@ var texts = {
   `,
   galleryIntro: `
   <p>
-    Este es el intro de la galería.
+    Pongo algo más.
   </p>
   `,
 };
