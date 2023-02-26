@@ -53,6 +53,10 @@
   -webkit-overflow-scrolling: touch;
 } */
 
+/* .fondo {
+  background-image: url("./img/green-grass-textures.jpg");
+} */
+
 .object-fit-cover {
   object-fit: cover;
   object-position: center bottom;
@@ -113,3 +117,4 @@
 .card-img-top {
   aspect-ratio: auto;
 }
+
