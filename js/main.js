@@ -35,9 +35,6 @@ var texts = {
   </p>
   `,
   galleryIntro: `
-  <p>
-    Pongo algo más.
-  </p>
   `,
 };
 (() => {

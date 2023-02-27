@@ -1,6 +1,7 @@
 /* * {
   background-color: #EEF2E6;
-  Como carajos cambiar color del fondo?
+  Como carajos cambiar color del fondo? ni idea
+  XD
 } */
 /* .bd-placeholder-img {
   font-size: 1.125rem;
@@ -55,10 +56,9 @@
 
 .fondo {
   height: 100vh;
-  background-image: url('../img/green-grass-textures.jpg');
+  background-image: url("../img/green-grass-textures.jpg");
   background-size: cover;
   background-position: center;
-  
 }
 
 .object-position-center-bottom {
@@ -66,9 +66,8 @@
 }
 
 .object-position-center-center {
-  object-position: center ;
+  object-position: center;
 }
-
 
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -86,10 +85,11 @@
 
 .b-example-divider {
   height: 3rem;
-  background-color: rgba(0, 0, 0, .1);
-  border: solid rgba(0, 0, 0, .15);
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
   border-width: 1px 0;
-  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
 
 .b-example-vr {
@@ -99,7 +99,7 @@
 }
 
 .bi {
-  vertical-align: -.125em;
+  vertical-align: -0.125em;
   fill: currentColor;
 }
 
@@ -121,7 +121,8 @@
   -webkit-overflow-scrolling: touch;
 }
 
-.card-img-top {
-  aspect-ratio: auto;
+/* mansonry section */
+div[data-masonry] img {
+  object-fit: cover;
+  object-position: center top;
 }
-
