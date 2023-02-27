@@ -50,7 +50,7 @@ var texts = {
   `;
   for (let key in texts) {
     let docElement = document.getElementById(key + "-text-data");
-    if (!!docElement || texts[key] !== '') {
+    if (!!docElement && texts[key] !== '') {
       texts[key] = docElement.innerHTML;
       getText(key);
     }

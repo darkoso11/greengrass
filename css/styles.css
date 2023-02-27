@@ -53,13 +53,20 @@
   -webkit-overflow-scrolling: touch;
 } */
 
-/* .fondo {
-  background-image: url("./img/green-grass-textures.jpg");
-} */
+.fondo {
+  height: 100vh;
+  background-image: url('../img/green-grass-textures.jpg');
+  background-size: cover;
+  background-position: center;
+  
+}
 
-.object-fit-cover {
-  object-fit: cover;
+.object-position-center-bottom {
   object-position: center bottom;
+}
+
+.object-position-center-center {
+  object-position: center ;
 }
 
 
