@@ -54,6 +54,10 @@
   -webkit-overflow-scrolling: touch;
 } */
 
+.logo {
+  width: 75px;
+}
+
 .fondo {
   height: 100vh;
   background-image: url("../img/green-grass-textures.jpg");
