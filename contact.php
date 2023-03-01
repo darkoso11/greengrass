@@ -20,18 +20,18 @@ try {
     $mensaje=$_POST["mensaje"];
     
     $mail->isSMTP();                                     
-    $mail->Host = 'SERVIDOR_SMTP_CORREO';
+    $mail->Host = 'svgt199.serverneubox.com.mx';
     $mail->SMTPAuth = true;                             
-    $mail->Username = 'USUARIO_CORREO';             
-    $mail->Password = 'CONTRASEÑA_CORREO';           
+    $mail->Username = 'contact@santiagosyntheticgrass.com';             
+    $mail->Password = '15QXebM3&*PY6y*v8Yw!';           
     $mail->SMTPSecure = 'tls';                         
-    $mail->Port = 000; //PUERTO CORREO
+    $mail->Port = 465; //PUERTO CORREO
     $mail->CharSet = 'UTF-8';
 
-    $mail->setFrom('CORREO_EMPRESA', 'TITULO CORREO');
+    $mail->setFrom('contact@santiagosyntheticgrass.com', 'Santiago Synthetic Grass');
     
     // SUSTITUIR POR VALOR DEL INPUT DONDE SE INTRODUCE EL CORREO
-    $mail->addAddress('CORREO_EMPRESA');
+    $mail->addAddress('contact@santiagosyntheticgrass.com');
 
     // CON COPIA A...
     //$mail->addCC('');
@@ -76,15 +76,15 @@ try {
     // AUTORESPUESTA
 
     $reply->isSMTP();                                     
-    $mail->Host = 'SERVIDOR_SMTP_CORREO';
+    $mail->Host = 'svgt199.serverneubox.com.mx';
     $mail->SMTPAuth = true;                             
-    $mail->Username = 'USUARIO_CORREO';             
-    $mail->Password = 'CONTRASEÑA_CORREO';           
+    $mail->Username = 'contact@santiagosyntheticgrass.com';             
+    $mail->Password = '15QXebM3&*PY6y*v8Yw!';           
     $mail->SMTPSecure = 'tls';                         
-    $mail->Port = 000; //PUERTO CORREO
+    $mail->Port = 465; //PUERTO CORREO
     $mail->CharSet = 'UTF-8';
 
-    $reply->setFrom('CORREO_EMPRESA', 'NOMBRE CORREO');
+    $reply->setFrom('contact@santiagosyntheticgrass.com', 'Santiago Synthetic Grass');
     $reply->addAddress($correo);
     $reply->isHTML(true);    
     $reply->Subject = 'Confirmación de envió de mensaje';
