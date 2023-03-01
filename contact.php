@@ -23,7 +23,7 @@ try {
     $mail->Host = 'svgt199.serverneubox.com.mx';
     $mail->SMTPAuth = true;                             
     $mail->Username = 'contact@santiagosyntheticgrass.com';             
-    $mail->Password = '15QXebM3&*PY6y*v8Yw!';           
+    $mail->Password = 'flN56bPZL4#761YN';           
     $mail->SMTPSecure = 'tls';                         
     $mail->Port = 465; //PUERTO CORREO
     $mail->CharSet = 'UTF-8';
@@ -79,7 +79,7 @@ try {
     $reply->Host = 'svgt199.serverneubox.com.mx';
     $reply->SMTPAuth = true;                             
     $reply->Username = 'contact@santiagosyntheticgrass.com';             
-    $reply->Password = '15QXebM3&*PY6y*v8Yw!';           
+    $reply->Password = 'flN56bPZL4#761YN';           
     $reply->SMTPSecure = 'tls';                         
     $reply->Port = 465; //PUERTO CORREO
     $reply->CharSet = 'UTF-8';
