@@ -20,12 +20,12 @@ try {
     $mensaje=$_POST["mensaje"];
     
     $mail->isSMTP();                                     
-    $mail->Host = 'svgt199.serverneubox.com.mx';
+    $mail->Host = 'mail.santiagosyntheticgrass.com';
     $mail->SMTPAuth = true;                             
     $mail->Username = 'contact@santiagosyntheticgrass.com';             
     $mail->Password = 'flN56bPZL4#761YN';           
     $mail->SMTPSecure = 'tls';                         
-    $mail->Port = 465; //PUERTO CORREO
+    $mail->Port = 587; //PUERTO CORREO
     $mail->CharSet = 'UTF-8';
 
     $mail->setFrom('contact@santiagosyntheticgrass.com', 'Santiago Synthetic Grass');
@@ -76,12 +76,12 @@ try {
     // AUTORESPUESTA
 
     $reply->isSMTP();                                     
-    $reply->Host = 'svgt199.serverneubox.com.mx';
+    $reply->Host = 'mail.santiagosyntheticgrass.com';
     $reply->SMTPAuth = true;                             
     $reply->Username = 'contact@santiagosyntheticgrass.com';             
     $reply->Password = 'flN56bPZL4#761YN';           
     $reply->SMTPSecure = 'tls';                         
-    $reply->Port = 465; //PUERTO CORREO
+    $reply->Port = 587; //PUERTO CORREO
     $reply->CharSet = 'UTF-8';
 
     $reply->setFrom('contact@santiagosyntheticgrass.com', 'Santiago Synthetic Grass');
