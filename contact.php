@@ -14,11 +14,9 @@ $reply = new PHPMailer(true);
 try { 
     // SUSTITUIR EN $_POST[" -- AQUI --"] EL NOMBRE (id) DEL INPUT DONDE SE INTRODUCEN LOS SIGUIENTES DATOS
     $nombre=$_POST["nombre"];
-  /*   $apellido=$_POST["apellido"]; */
     $correo=$_POST["correo"];
     $telefono=$_POST["telefono"];
     $region=$_POST["region"];
-    /* $asunto=$_POST["asunto"]; */
     $mensaje=$_POST["mensaje"];
     
     $mail->isSMTP();                                     
@@ -47,10 +45,8 @@ try {
             <ul>
                 <li>$asunto</li>
                 <li>$nombre</li>
-                /* <li>$apellido</li> */
                 <li>$correo</li>
                 <li>$telefono</li>
-                /* <li>$region</li> */
                 <li>$mensaje</li>
             </ul>
         </div>
